@@ -89,10 +89,6 @@ breathe_projects = { "c++" : "_doxygen/xml/" }
 breathe_default_project = "c++"
 breathe_projects_source = { "src" : ("../c++", ["nutshell.hpp"]) }
 
-# -- Options for MathJax output -------------------------------------------
-
-mathjax_path = "/Users/hugstr/src/MathJax/MathJax.js?config=default"
-
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
