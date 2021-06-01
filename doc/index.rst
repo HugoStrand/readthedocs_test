@@ -6,13 +6,14 @@
 Welcome to readthedocs_test's documentation!
 ============================================
 
-This is a test of using Sphinx(+breathe) to generate automatic documentation from comments in both `python` and `c++` code in a mixed project.
+This is a test of using Sphinx(+breathe) to generate automatic documentation from comments in both `python`, `c++`, and `fortran` code in a mixed project.
 
 The documentation can be automatically generated and hosted by http://readthedocs.org/ if the git repository of the code https://github.com/HugoStrand/readthedocs_test is linked to their service.
 
 Building the documentation locally requires
 -------------------------------------------
 
+- `CMake` https://cmake.org/
 - `sphinx` http://www.sphinx-doc.org/
 - `doxygen` http://www.doxygen.org/
 - `breathe` http://breathe.readthedocs.io/
