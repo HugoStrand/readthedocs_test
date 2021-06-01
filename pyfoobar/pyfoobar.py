@@ -3,7 +3,7 @@
 Author: H. U.R. Strand (2017)
 """
 
-class MyClass(object):
+class MyClass():
     """ This is a test class with some doc strings.
 
     Extended description of the class
@@ -42,7 +42,7 @@ class MyClass(object):
             The sum of A and B
         
         """
-        print A + B
+        print(A + B)
 
     def math_docstring(self):
         r""" Here we test the sphinx based math features :math:`\alpha+\beta+\gamma`
@@ -54,10 +54,10 @@ class MyClass(object):
 
     def do_stuff(self):
         """ This is not a default method that actually does something """
-        print "Roses are red, violets are blue, these docs are meant entirely for you."
+        print("Roses are red, violets are blue, these docs are meant entirely for you.")
     
     def no_doc_string(self):
-        print "What happens when we do not have a docstring?"
+        print("What happens when we do not have a docstring?")
 
     def _private_method(self):
         """ This is a Python "private" method by one underscore..."""
@@ -74,4 +74,4 @@ class MyClass(object):
 if __name__ == '__main__':
 
     mc = MyClass()
-    print mc
+    print(mc)

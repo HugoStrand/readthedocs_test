@@ -24,6 +24,7 @@ Building the documentation locally requires
 
    pyfoobar.rst
    nutshell.rst
+   utils.rst
 
 Indices and tables
 ==================

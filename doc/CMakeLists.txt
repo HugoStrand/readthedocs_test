@@ -15,10 +15,12 @@ add_custom_command (OUTPUT ${rst_copy_tar} DEPENDS ${all_rst_files}
 add_custom_target(rst_copy DEPENDS ${rst_copy_tar})
 
 add_subdirectory(_doxygen)
+add_subdirectory(_doxygen_fortran)
 
 SET(sphinx_cfg ${CMAKE_CURRENT_BINARY_DIR}/conf.py.patch)
 file(READ conf.py SPHINXCFG_PATCH)
 string(REPLACE "../c++" "../../c++" SPHINXCFG_PATCH ${SPHINXCFG_PATCH})
+string(REPLACE "../fortran" "../../fortran" SPHINXCFG_PATCH ${SPHINXCFG_PATCH})
 string(REPLACE "../pyfoobar" "../../pyfoobar" SPHINXCFG_PATCH ${SPHINXCFG_PATCH})
 file(WRITE ${sphinx_cfg} ${SPHINXCFG_PATCH})
 

@@ -85,9 +85,9 @@ todo_include_todos = True
 
 # -- Options for breathe c++ doc ------------------------------------------
 
-breathe_projects = { "c++" : "_doxygen/xml/" }
+breathe_projects = { "c++" : "_doxygen/xml/", "fortran" : "_doxygen_fortran/xml" }
 breathe_default_project = "c++"
-breathe_projects_source = { "src" : ("../c++", ["nutshell.hpp"]) }
+breathe_projects_source = { "c++" : ("../c++", ["nutshell.hpp"]), "fortran" : ("../fortran", ["utils.f90"]) }
 
 # -- Options for HTML output ----------------------------------------------
 
